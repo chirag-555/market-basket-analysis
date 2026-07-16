@@ -41,5 +41,3 @@ Open a GitHub Issue with:
 Association rule mining with real-time FastAPI recommendation endpoint.
 
 ---
-
-**Author:** [Deepanshu Garg](https://github.com/deepanshu0110) · Freelance Data Scientist · [Hire me](https://www.freelancer.com/u/deepanshu0110)
