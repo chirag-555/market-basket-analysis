@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: market-basket-api
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn src.realtime_api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+      - key: ENV
+        value: production
+      # Optional: point to Redis URL if you add Render Redis
+      # - key: REDIS_URL
+      #   fromService:
+      #     type: redis
+      #     name: market-basket-redis
+      #     property: connectionString
+# Uncomment to provision Redis on Render automatically
+# databases:
+#   - name: market-basket-redis
+#     plan: free
+#     ipAllowList: []
