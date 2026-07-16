@@ -1,0 +1,32 @@
+# --- Core analytics ---
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.1
+mlxtend>=0.22.0
+apyori>=1.1.2
+networkx>=2.7
+
+# --- Visualization (optional but used in repo) ---
+matplotlib>=3.6
+seaborn>=0.12
+plotly>=5.15
+
+# --- API (FastAPI) ---
+fastapi>=0.110
+uvicorn[standard]>=0.27   # runs the server
+
+# --- Models / schemas ---
+pydantic>=2.5
+
+# --- Caching / realtime store ---
+redis>=5.0                # python redis client (for your `import redis`)
+
+# --- Client / CLI helpers ---
+requests>=2.31
+aiohttp>=3.9
+rich>=13.7
+
+# --- DX / optional ---
+python-dotenv>=1.0        # load .env if you use it
+jupyter>=1.0              # notebooks
+pytest>=7.4               # tests
